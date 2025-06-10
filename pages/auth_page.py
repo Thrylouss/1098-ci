@@ -6,8 +6,8 @@ from selenium.webdriver.support.wait import WebDriverWait
 class AuthPage:
     def __init__(self, driver):
         self.driver = driver
-        self.login = (By.CSS_SELECTOR, "#app > div > div > div > div.log-in__content > form > label > input")
-        self.next_btn = (By.CSS_SELECTOR, "#app > div > div > div > div.log-in__content > form > button")
+        self.login = (By.CSS_SELECTOR, "#app > div > div > div > div.log-in__container > div > div.log-in__newContent-right > div > div.log-in__newContent-right-block-wrap > form > div.log-in__newContent-right-block-center > div > label > input")
+        self.next_btn = (By.CSS_SELECTOR, "#app > div > div > div > div.log-in__container > div > div.log-in__newContent-right > div > div.log-in__newContent-right-block-wrap > form > div.log-in__newContent-right-block-bot > button")
 
     def enter_phone_number(self, phone):
         wait = WebDriverWait(self.driver, 10)
